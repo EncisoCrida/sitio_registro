@@ -1,0 +1,59 @@
+<!-- **
+     * Autor: Cristian Enciso (Enciso_crida)
+     * vista: sección registrar usuarios.
+     *
+     * 
+     *-->
+
+     <form action="../controlador/usuarios(2).php" method="POST">
+
+<input type="text" placeholder="Nombre de usuario" name="nombre">
+
+<!-- los tipos de documentos ya estaran registrados en una tabla de la base de datos.
+mediante una funcion, consulta etc. seran traidos e incluidos como una opcion para selecionar, 
+las opciones puestas a continuacion son ejemplos nada mas -->
+<select name="idTipo_doc">
+    <option value="flase">select type document</option>
+   <option value="1">type document 1</option> 
+   <option value="2">type document 2</option> 
+   <option value="3">type document 3</option>
+   <option value="4">type document 4</option> 
+   <option value="5">type document 5</option> 
+   <option value="6">type document 6</option> 
+</select>
+<!-- los roles ya estaran registrados en una tabla de la base de datos.
+mediante una funcion, consulta etc. seran traidos e incluidos como una opcion para selecionar
+las opciones puestas a continuacion son ejemplos nada mas -->
+<select name="idRol">
+    <option value="flase">select rol user</option>
+   <option value="1">rol 1</option> 
+   <option value="2">rol 2</option> 
+   <option value="3">rol 3</option>
+   <option value="4">rol 4</option> 
+   <option value="5">rol 5</option> 
+   <option value="6">rol 6</option> 
+</select>
+<input type="number" placeholder="documento" name="documento">
+<!-- los estados seran registrados por un super usuario, los iran a una tabla de la base de datos.
+mediante una funcion, consulta etc. seran traidos e incluidos como una opcion para selecionar
+las opciones puestas a continuacion son ejemplos nada mas -->
+<select name="idEstado">
+<option value="flase">select status</option>
+   <option value="1">status 1</option> 
+   <option value="2">status 2</option> 
+   <option value="3">status 3</option>
+</select>
+<!-- los cursos seran registrados por un super usuario, los iran a una tabla de la base de datos.
+mediante una funcion, consulta etc. seran traidos e incluidos como una opcion para selecionar
+las opciones puestas a continuacion son ejemplos nada mas -->
+<select name="idCurso">
+    <option value="flase">select curse</option>
+   <option value="1">curse 1</option> 
+   <option value="2">curse 2</option> 
+   <option value="3">curse 3</option>
+   <option value="4">curse 4</option> 
+   <option value="5">curse 5</option> 
+   <option value="6">curse 6</option> 
+</select>
+<input type="submit" value="registrar">
+</form>

@@ -1,0 +1,36 @@
+<!-- /**
+     * Autor: Cristian Enciso (Enciso_crida)
+     * vista: sección registrar curso (acceso solo a super usuario(superUS)).
+     *
+     * 
+     */ -->
+
+<form action="../controlador/curso.php" method="POST">
+
+
+<input type="number" placeholder="Numero de curso" name="numCurso">
+<input type="text" placeholder="Nombre de curso" name="nombre">
+
+<!-- los niveles de curso ya estaran registrados en una tabla de la base de datos.
+mediante una funcion, consulta etc. seran traidos e incluidos como una opcion para selecionar, 
+las opciones puestas a continuacion son ejemplos nada mas -->
+<select name="idNivelCurso">
+    <option value="flase">select level curse</option>
+   <option value="1">curse 1</option> 
+   <option value="2">curse 2</option> 
+   <option value="3">curse 3</option>
+   <option value="4">curse 4</option> 
+   <option value="5">curse 5</option> 
+   <option value="6">curse 6</option> 
+</select>
+<!-- las jornadas ya estaran registrados en una tabla de la base de datos.
+mediante una funcion, consulta etc. seran traidos e incluidos como una opcion para selecionar
+las opciones puestas a continuacion son ejemplos nada mas -->
+<select name="idJornadaCurso">
+    <option value="flase">select working day</option>
+   <option value="1">working day 1</option> 
+   <option value="2">working day 2</option> 
+   <option value="3">working day 3</option>
+</select>
+<input type="submit" value="registrar">
+</form>

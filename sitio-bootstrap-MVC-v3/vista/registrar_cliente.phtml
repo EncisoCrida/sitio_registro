@@ -1,0 +1,41 @@
+<!-- /**
+     * Autor: Cristian Enciso (Enciso_crida)
+     * vista: sección registrar cliente (acceso solo a super usuario(superUS)).
+     *
+     * 
+     */ -->
+
+     <form action="../controlador/cliente.php" method="POST">
+
+<input type="text" placeholder="Nombre cliente" name="nombre">
+
+<!-- los tipos de documentos ya estaran registrados en una tabla de la base de datos.
+mediante una funcion, consulta etc. seran traidos e incluidos como una opcion para selecionar, 
+las opciones puestas a continuacion son ejemplos nada mas -->
+<select name="tipo_doc">
+    <option value="flase">select type document</option>
+   <option value="1">type document 1</option> 
+   <option value="2">type document 2</option> 
+   <option value="3">type document 3</option>
+   <option value="4">type document 4</option> 
+   <option value="5">type document 5</option> 
+   <option value="6">type document 6</option> 
+</select>
+<input type="number" placeholder="documento" name="documento">
+<input type="email" placeholder="email" name="gmail">
+<input type="text" placeholder="create a password" name="password">
+<!-- los roles ya estaran registrados en una tabla de la base de datos.
+mediante una funcion, consulta etc. seran traidos e incluidos como una opcion para selecionar
+las opciones puestas a continuacion son ejemplos nada mas -->
+<select name="rol">
+    <option value="flase">select rol user</option>
+   <option value="1">rol 1</option> 
+   <option value="2">rol 2</option> 
+   <option value="3">rol 3</option>
+   <option value="4">rol 4</option> 
+   <option value="5">rol 5</option> 
+   <option value="6">rol 6</option> 
+</select>
+<input type="number" placeholder="Telefono" name="telefono">
+<input type="submit" value="registrar">
+</form>
